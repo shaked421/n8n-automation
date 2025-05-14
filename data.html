@@ -7,40 +7,54 @@
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		.image-row {
+		.images {
+			list-style: none;
+			margin: 0;
+			padding: 0;
 			display: flex;
-			flex-direction: row;
 			justify-content: space-between;
-			margin-bottom: 20px;
 		}
-		.image {
+		.images li {
+			margin-right: 20px;
+		}
+		.images img {
 			width: 200px;
-			margin: 5px;
+			height: auto;
+			margin-bottom: 10px;
 		}
-		.location {
+		.locations {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.locations li {
 			margin-bottom: 20px;
 		}
-		.location iframe {
+		.locations iframe {
 			width: 100%;
 			height: 300px;
+			margin-top: 10px;
 			border: 1px solid #ccc;
 		}
 	</style>
 </head>
 <body>
 	<h1>Milan's Authentic Street Food tour: A Gourmet Experience</h1>
-	<div class="image-row">
-		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/dd/caption.jpg" alt="Image 1">
-		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/de/caption.jpg" alt="Image 2">
-		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/e0/caption.jpg" alt="Image 3">
-	</div>
-	<ul>
-		<li>Attraction 1 - Milan, Lombardy</li>
-		<iframe src="https://www.google.com/maps?q=Milan, Lombardy&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		<li>Attraction 2 - Milan, Lombardy</li>
-		<iframe src="https://www.google.com/maps?q=Milan, Lombardy&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		<li>Attraction 3 - Milan, Lombardy</li>
-		<iframe src="https://www.google.com/maps?q=Milan, Lombardy&output=embed" frameborder="0" width="100%" height="300"></iframe>
+	<ul class="images">
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/dd/caption.jpg" alt="Image 1"></li>
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/de/caption.jpg" alt="Image 2"></li>
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/dd/caption.jpg" alt="Image 3"></li>
+	</ul>
+	<ul class="locations">
+		<li>Attraction 1 - Milan, Lombardy
+			<iframe src="https://www.google.com/maps?q=Milan, Lombardy&output=embed" frameborder="0" width="100%" height="300"></iframe>
+		</li>
+		<li>Attraction 2 - Milan, Lombardy
+			<iframe src="https://www.google.com/maps?q=Milan, Lombardy&output=embed" frameborder="0" width="100%" height="300"></iframe>
+		</li>
+		<li>Attraction 3 - Milan, Lombardy
+			<iframe src="https://www.google.com/maps?q=Milan, Lombardy&output=embed" frameborder="0" width="100%" height="300"></iframe>
+		</li>
 	</ul>
 </body>
 </html>
