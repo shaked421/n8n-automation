@@ -7,54 +7,44 @@
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		.images {
-			list-style: none;
-			margin: 0;
-			padding: 0;
+		.image-container {
 			display: flex;
-			justify-content: space-between;
+			flex-wrap: wrap;
+			justify-content: center;
 		}
-		.images li {
-			margin-right: 20px;
-		}
-		.images img {
+		.image {
+			margin: 10px;
 			width: 200px;
-			height: auto;
-			margin-bottom: 10px;
+			height: 150px;
+			object-fit: cover;
 		}
-		.locations {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-		.locations li {
+		.location {
 			margin-bottom: 20px;
 		}
-		.locations iframe {
-			width: 100%;
-			height: 300px;
+		.location li {
+			margin-bottom: 10px;
+		}
+		.location iframe {
 			margin-top: 10px;
-			border: 1px solid #ccc;
+			width: 500px;
+			height: 300px;
 		}
 	</style>
 </head>
 <body>
 	<h1>Milan's Authentic Street Food tour: A Gourmet Experience</h1>
-	<ul class="images">
-		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/dd/caption.jpg" alt="Image 1"></li>
-		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/de/caption.jpg" alt="Image 2"></li>
-		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/dd/caption.jpg" alt="Image 3"></li>
-	</ul>
-	<ul class="locations">
-		<li>Attraction 1 - Milan, Lombardy
-			<iframe src="https://www.google.com/maps?q=Milan, Lombardy&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</li>
-		<li>Attraction 2 - Milan, Lombardy
-			<iframe src="https://www.google.com/maps?q=Milan, Lombardy&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</li>
-		<li>Attraction 3 - Milan, Lombardy
-			<iframe src="https://www.google.com/maps?q=Milan, Lombardy&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</li>
+	<div class="image-container">
+		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/dd/caption.jpg" alt="Image 1">
+		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/dd/caption.jpg" alt="Image 2">
+		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/2f/9d/92/dd/caption.jpg" alt="Image 3">
+	</div>
+	<ul class="location">
+		<li>Attraction 1 - Milan, Lombardy</li>
+		<iframe src="https://www.google.com/maps?q=Milan,+Lombardy&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<li>Attraction 2 - Milan, Lombardy</li>
+		<iframe src="https://www.google.com/maps?q=Attraction+2,+Milan,+Lombardy&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<li>Attraction 3 - Milan, Lombardy</li>
+		<iframe src="https://www.google.com/maps?q=Attraction+3,+Milan,+Lombardy&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</ul>
 </body>
 </html>
