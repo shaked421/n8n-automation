@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Boston's Best Freedom Trail Walking Tour</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			text-align: center;
-		}
-		.container {
-			max-width: 800px;
-			margin: 40px auto;
-			padding: 20px;
-			background-color: #f9f9f9;
-			border: 1px solid #ccc;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.image-grid {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.image-grid img {
-			width: 200px;
-			margin: 10px;
-			border: 1px solid #ddd;
-			border-radius: 5px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-	</style>
+  <title>London's Palaces & Parliament Tour</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .image-col {
+      flex-basis: 33%;
+    }
+    .image {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .map-container {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-	<div class="container">
-		<h1>Boston's Best Freedom Trail Walking Tour</h1>
-		<div class="image-grid">
-			<img src="https://media-cdn.tripadvisor.com/media/photo-o/28/c6/27/c9/caption.jpg" alt="Image 1">
-			<img src="https://media-cdn.tripadvisor.com/media/photo-o/28/c6/27/c8/caption.jpg" alt="Image 2">
-			<img src="https://media-cdn.tripadvisor.com/media/photo-o/28/c6/27/c7/caption.jpg" alt="Image 3">
-		</div>
-		<ul>
-			<li>Faneuil Hall - 1 Faneuil Hall Square, Boston, MA 02113</li>
-			<iframe src="https://www.google.com/maps?q=Faneuil+Hall+-+1+Faneuil+Hall+Square,+Boston,+MA+02113&output=embed" frameborder="0" width="280" height="200" allowfullscreen></iframe>
-			<li>Old North Church - 193 Salem St, Boston, MA 02113</li>
-			<iframe src="https://www.google.com/maps?q=Old+North+Church+-+193+Salem+St,+Boston,+MA+02113&output=embed" frameborder="0" width="280" height="200" allowfullscreen></iframe>
-			<li>USS Constitution - 1 Constitution Rd, Boston, MA 02129</li>
-			<iframe src="https://www.google.com/maps?q=USS+Constitution+-+1+Constitution+Rd,+Boston,+MA+02129&output=embed" frameborder="0" width="280" height="200" allowfullscreen></iframe>
-		</ul>
-	</div>
+  <h1>London's Palaces & Parliament Tour (See Over 20+ London Top Sights)</h1>
+  <div class="image-row">
+    <div class="image-col">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-o/2d/ee/34/86/caption.jpg" alt="Image 1" class="image">
+    </div>
+    <div class="image-col">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-o/2d/ee/34/87/caption.jpg" alt="Image 2" class="image">
+    </div>
+    <div class="image-col">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-o/2d/ee/34/88/caption.jpg" alt="Image 3" class="image">
+    </div>
+  </div>
+  <ul>
+    <li>Buckingham Palace, London</li>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps?q=Buckingham Palace, London&output=embed" frameborder="0" width="400" height="300"></iframe>
+    </div>
+    <li>The Tower of London, London</li>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps?q=The Tower of London, London&output=embed" frameborder="0" width="400" height="300"></iframe>
+    </div>
+    <li>Westminster Abbey, London</li>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps?q=Westminster Abbey, London&output=embed" frameborder="0" width="400" height="300"></iframe>
+    </div>
+  </ul>
 </body>
 </html>
