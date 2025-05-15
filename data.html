@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tel Aviv Jaffa Guided Bike Tour</title>
+	<title>Discover Berlin Half-Day Walking Tour</title>
 	<style>
 		body {
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		.image-row {
+		.image-grid {
 			display: flex;
-			justify-content: center;
 			flex-wrap: wrap;
+			justify-content: center;
 		}
-		.image {
-			margin: 10px;
+		.image-grid img {
 			width: 200px;
-			height: 150px;
-			object-fit: cover;
+			margin: 10px;
 		}
-		.location {
-			margin-bottom: 20px;
+		.locations {
+			margin-top: 20px;
 		}
-		.location li {
+		.locations ul {
 			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.locations li {
 			margin-bottom: 10px;
 		}
-		.location iframe {
+		.locations iframe {
 			width: 100%;
 			height: 300px;
 			border: 1px solid #ccc;
@@ -33,16 +35,18 @@
 	</style>
 </head>
 <body>
-	<h1>Tel Aviv Jaffa Guided Bike Tour</h1>
-	<div class="image-row">
-		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/8e/8b/ce/caption.jpg" alt="...">
-		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/8e/8b/ce/caption.jpg" alt="...">
-		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/8e/8b/ce/caption.jpg" alt="...">
+	<h1>Discover Berlin Half-Day Walking Tour</h1>
+	<div class="image-grid">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/64/0d/22/caption.jpg" alt="Image 1">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/64/0d/23/caption.jpg" alt="Image 2">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/64/0d/24/caption.jpg" alt="Image 3">
 	</div>
-	<ul class="location">
-		<li>Tel Aviv Museum of Art, 27 Shaul HaMelech Street, Tel Aviv, Israel - https://www.google.com/maps?q=Tel Aviv Museum of Art, 27 Shaul HaMelech Street, Tel Aviv, Israel&output=embed</li>
-		<li>Jaffa Flea Market, Jaffa, Israel - https://www.google.com/maps?q=Jaffa Flea Market, Jaffa, Israel&output=embed</li>
-		<li>Tarbut Museum, 24 Rashi Street, Tel Aviv, Israel - https://www.google.com/maps?q=Tarbut Museum, 24 Rashi Street, Tel Aviv, Israel&output=embed</li>
-	</ul>
+	<div class="locations">
+		<ul>
+			<li>Berlin Cathedral - Unter den Linden, Berlin, Germany <iframe src="https://www.google.com/maps?q=Unter+den+Linden,+Berlin,+Germany&output=embed" frameborder="0" width="400" height="300"></iframe></li>
+			<li>Brandenburg Gate - Pariser Platz, Berlin, Germany <iframe src="https://www.google.com/maps?q=Pariser+Platz,+Berlin,+Germany&output=embed" frameborder="0" width="400" height="300"></iframe></li>
+			<li>Museum Island - Museum Island, Berlin, Germany <iframe src="https://www.google.com/maps?q=Museum+Island,+Berlin,+Germany&output=embed" frameborder="0" width="400" height="300"></iframe></li>
+		</ul>
+	</div>
 </body>
 </html>
