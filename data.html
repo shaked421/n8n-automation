@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>1-Day Tokyo Bus Tour</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    .image-container {
-      display: flex;
-      justify-content: space-between;
-    }
-    .image-container img {
-      width: 200px;
-      height: auto;
-      margin: 20px;
-    }
-    .location-map {
-      margin-top: 20px;
-    }
-  </style>
+	<title>New York in One Day Guided Sightseeing Tour</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		img {
+			width: 200px;
+			margin: 10px;
+		}
+		.locations {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.locations li {
+			margin-bottom: 20px;
+		}
+		.locations iframe {
+			width: 100%;
+			height: 300px;
+			margin-top: 10px;
+		}
+	</style>
 </head>
 <body>
-  <h1>1-Day Tokyo Bus Tour</h1>
-  <div class="image-container">
-    <img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/62/e6/9d/caption.jpg" alt="Image 1">
-    <img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/62/e6/9a/caption.jpg" alt="Image 2">
-    <img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/62/e6/9c/caption.jpg" alt="Image 3">
-  </div>
-  <ul>
-    <li>Nishishinjuku, Shinjuku, Tokyo, Tokyo Prefecture, Kanto</li>
-    <div class="location-map">
-      <iframe src="https://www.google.com/maps?q=Nishishinjuku, Shinjuku, Tokyo, Tokyo Prefecture, Kanto&output=embed" frameborder="0" width="100%" height="300"></iframe>
-    </div>
-    <li>Shinjuku, Tokyo, Tokyo Prefecture, Kanto</li>
-    <div class="location-map">
-      <iframe src="https://www.google.com/maps?q=Shinjuku, Tokyo, Tokyo Prefecture, Kanto&output=embed" frameborder="0" width="100%" height="300"></iframe>
-    </div>
-    <li>Tokyo, Tokyo Prefecture, Kanto</li>
-    <div class="location-map">
-      <iframe src="https://www.google.com/maps?q=Tokyo, Tokyo Prefecture, Kanto&output=embed" frameborder="0" width="100%" height="300"></iframe>
-    </div>
-  </ul>
+	<h1>New York in One Day Guided Sightseeing Tour</h1>
+	<ul>
+		<!-- Display the images -->
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1"></li>
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2"></li>
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3"></li>
+	</ul>
+	<ul class="locations">
+		<!-- Display the locations -->
+		<li>Central Park, New York City, New York
+			<iframe src="https://www.google.com/maps?q=Central+Park,+New+York,+New+York&output=embed" frameborder="0" allowfullscreen></iframe>
+		</li>
+		<li>The Metropolitan Museum of Art, New York City, New York
+			<iframe src="https://www.google.com/maps?q=The+Metropolitan+Museum+of+Art,+New+York,+New+York&output=embed" frameborder="0" allowfullscreen></iframe>
+		</li>
+		<li>Times Square, New York City, New York
+			<iframe src="https://www.google.com/maps?q=Times+Square,+New+York,+New+York&output=embed" frameborder="0" allowfullscreen></iframe>
+		</li>
+	</ul>
 </body>
 </html>
