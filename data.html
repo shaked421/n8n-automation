@@ -1,66 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>1-Day Tokyo Bus Tour</title>
+	<title>Paris Walking Food Tour with Secret Food Tours</title>
 	<style>
 		body {
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		imagenes {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
+		.container {
+			max-width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #f9f9f9;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
-		imagenes li {
-			margin: 10px;
+		.image-row {
+			margin: 20px 0;
+		}
+		.image {
 			width: 200px;
-			height: 150px;
-			background-size: cover;
-			background-position: center;
+			margin: 10px;
+			border: 1px solid #ccc;
 			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0,0,0,0.2);
-		}
-		imagenes li img {
-			width: 100%;
-			height: 100%;
-			border-radius: 10px;
-			object-fit: cover;
+			padding: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
 		.map {
-			border: 1px solid #ccc;
-			width: 500px;
+			width: 100%;
 			height: 300px;
-			margin: 20px auto;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			padding: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
 	</style>
 </head>
 <body>
-	<h1>1-Day Tokyo Bus Tour</h1>
-	<ul class="imagenes">
-		<li style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/1a/62/e6/9d/caption.jpg');"></li>
-		<li style="background-image: url('INSERT ADDITIONAL IMAGE URL HERE');"></li>
-		<li style="background-image: url('INSERT ADDITIONAL IMAGE URL HERE');"></li>
-	</ul>
-	<ul>
-		<li>Nishishinjuku, Shinjuku, Tokyo, Tokyo Prefecture, Kanto
+	<div class="container">
+		<h1>Paris Walking Food Tour with Secret Food Tours</h1>
+		<div class="image-row">
+			<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/48/caption.jpg" alt="Image 1">
+			<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/53/34/caption.jpg" alt="Image 2">
+			<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/53/35/caption.jpg" alt="Image 3">
+		</div>
+		<ul>
+			<li>Attraction 1 - Paris, Ile-de-France</li>
 			<div class="map">
-				<iframe src="https://www.google.com/maps?q=Nishishinjuku, Shinjuku, Tokyo, Tokyo Prefecture, Kanto&output=embed" frameborder="0" width="500" height="300"></iframe>
+				<iframe src="https://www.google.com/maps?q=Paris, Ile-de-France&output=embed" frameborder="0" style="border:0px none;" allowfullscreen></iframe>
 			</div>
-		</li>
-		<li>Shinjuku
+			<li>Attraction 2 - Paris, Ile-de-France</li>
 			<div class="map">
-				<iframe src="https://www.google.com/maps?q=Shinjuku&output=embed" frameborder="0" width="500" height="300"></iframe>
+				<iframe src="https://www.google.com/maps?q=Paris, Ile-de-France&output=embed" frameborder="0" style="border:0px none;" allowfullscreen></iframe>
 			</div>
-		</li>
-		<li>Tokyo
+			<li>Attraction 3 - Paris, Ile-de-France</li>
 			<div class="map">
-				<iframe src="https://www.google.com/maps?q=Tokyo&output=embed" frameborder="0" width="500" height="300"></iframe>
+				<iframe src="https://www.google.com/maps?q=Paris, Ile-de-France&output=embed" frameborder="0" style="border:0px none;" allowfullscreen></iframe>
 			</div>
-		</li>
-	</ul>
+		</ul>
+	</div>
 </body>
 </html>
